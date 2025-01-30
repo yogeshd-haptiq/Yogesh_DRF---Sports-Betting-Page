@@ -109,6 +109,11 @@ display: none;
     height: 33.86px;
     background: var(--primary-grey);
 }
+@media (min-width:768px){
+    .subNavLinks {
+        justify-content: center;
+    }
+}
 @media (min-width:1349px){
     .hideOndesktop{
         display: none;
@@ -139,10 +144,14 @@ display: none;
     .navLinkCell{
         border-right: none;
     }
+    .navLinkCell a{
+        border-right: none;
+    }
     .navLinkCell:hover{
         background: var(--primary-white);
     }
     .subNavLinks {
         justify-content: center;
+        gap: 16px;
     }
 }
