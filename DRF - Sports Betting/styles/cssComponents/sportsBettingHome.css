@@ -1,0 +1,98 @@
+.sportsBettingHome{
+    background: var(--linear-gradient);
+    box-shadow: var(--box-shadow);
+    margin: 20px 16px;
+        margin-top: 160px;
+    border-radius: 8px;
+}
+.sportsBettingHomeInner{
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.topInfoWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.topInfoWrapper .sectionHeading{
+    color: var(--primary-white);
+}
+.topInfoWrapper p{
+    color: var(--primary-white);
+font-family: var(--font-family-semibold);
+font-size: 13px;
+font-weight: 600;
+line-height: 16px;
+}
+.bottomInfoWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.bottomInfoWrapper .subHeading{
+    color: var(--primary-white);
+}
+.topDropdown,
+.bottomDropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.topDropdown select,
+.bottomDropdown select{
+    padding: 7px 11px;
+    border-radius: 8px;
+    border: var(--border);
+    font-size: 15px;
+    line-height: 20px;
+    font-family: var(--font-family-regular);
+    font-weight: 400;
+    color: var(--primary-grey);
+}
+.topDropdown select  option,
+.bottomDropdown select  option{
+    padding: 10px 14px;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: var(--font-family-regular);
+    font-weight: 400;
+    color: var(--primary-black);
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .sportsBettingHomeInner{
+        padding: 16px;
+    }
+    .bottomInfoWrapper{
+        flex-direction: row;
+        gap: 16px;
+    }
+    .topDropdown select,
+    .bottomDropdown select{
+        width: 240px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 1349px) {
+    .sportsBettingHome{
+        margin: 24px 32px;
+        margin-top: 174px;
+    }
+    .sportsBettingHomeInner{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px 24px;
+        align-items: center;
+    }
+    .topInfoWrapper{
+        max-width: 594px;
+    }
+    .bottomInfoWrapper{
+        gap: 48px;
+    }
+    .topInfoWrapper p{
+        padding-bottom: 4px;
+    }
+}

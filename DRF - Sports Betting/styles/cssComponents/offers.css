@@ -1,0 +1,152 @@
+.offersSection{
+    margin: 0px 16px;
+    margin-bottom: 20px;
+}
+.offersWrapper{
+    display: flex;
+    flex-direction: column;
+}
+.offersItem{
+    margin-top: 12px;
+    padding: 15px 11px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.topOffersItem{
+    display: flex;
+    gap: 12px;
+}
+.sportbookImage{
+    background: var(--primary-black);
+    max-width: 89px;
+    min-height: 89px;
+    max-height: 89px;
+    border-radius: 4px;
+}
+.sportbookImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0px 3px;
+}
+.OffersItemInner{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.offersItemInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+.offersItemInfo h3{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: var(--font-family-semibold);
+    color: var(--primary-grey);
+}
+.offersItemInfo h2{
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: var(--font-family-semibold);
+}
+.offersItemInfo h2 > p{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: var(--font-family-regular);
+}
+.offersItemList{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.offersItemList li{
+    display: flex;
+    gap: 8px;
+}
+.offersItemList li > svg{
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+.offersItemList li > p{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: var(--font-family-regular);
+}
+.offersButton{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+@media (min-width: 768px) {
+.OffersItemInner {
+    flex-direction: row;
+}
+.topOffersItem{
+    gap: 24px;
+}
+.topOffersItem,
+.offersItemList{
+    /* width: 340px; */
+    width: calc(50% - 12px);
+}
+.offersButton{
+    flex-direction: row;
+}
+.offersButton button{
+    width: calc(50% - 6px);
+}
+}
+
+@media (min-width: 1349px) {
+    .offersSection{
+        box-shadow: var(--box-shadow);
+        padding: 15px 23px 31px 23px;
+        border-radius: 8px;
+        margin: 0px 32px;
+    }
+    .offersItem{
+        width: 100%;
+        flex-direction: row;
+        padding: 15px 23px;
+        box-shadow: none;
+        justify-content: space-between;
+        gap: 32px;
+        margin-top: 0px;
+    }
+    .OffersItemInner{
+        flex-grow: 1;
+    }
+    .offersWrapper{
+        gap: 20px;
+    }
+    .offersItemInfo h2{
+        display: flex;
+        gap: 6px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .offersItemInfo h2 > p{
+        display: flex;
+        align-items: flex-end;
+    }
+    .offersButton{
+        flex-direction: column;
+    }
+    .topOffersItem, .offersItemList {
+        width: calc(100%);
+    }
+    .offersButton button{
+        width: calc(100%) ;
+    }
+}
