@@ -1,98 +1,145 @@
-.sportsBettingHome{
-    background: var(--linear-gradient);
-    box-shadow: var(--box-shadow);
-    margin: 20px 16px;
-        margin-top: 160px;
-    border-radius: 8px;
+.sportsBettingHome {
+  background: var(--linear-gradient);
+  box-shadow: var(--box-shadow);
+  margin: 20px 16px;
+  margin-top: 160px;
+  border-radius: 8px;
 }
-.sportsBettingHomeInner{
-    padding: 16px 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.sportsBettingHomeInner {
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-.topInfoWrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+.topInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-.topInfoWrapper .sectionHeading{
-    color: var(--primary-white);
+.topInfoWrapper .sectionHeading {
+  color: var(--primary-white);
 }
-.topInfoWrapper p{
-    color: var(--primary-white);
-font-family: var(--font-family-semibold);
-font-size: 13px;
-font-weight: 600;
-line-height: 16px;
+.topInfoWrapper p {
+  color: var(--primary-white);
+  font-family: var(--font-family-semibold);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
 }
-.bottomInfoWrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.bottomInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-.bottomInfoWrapper .subHeading{
-    color: var(--primary-white);
+.bottomInfoWrapper .subHeading {
+  color: var(--primary-white);
 }
 .topDropdown,
-.bottomDropdown{
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+.bottomDropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
-.topDropdown select,
-.bottomDropdown select{
-    padding: 7px 11px;
-    border-radius: 8px;
-    border: var(--border);
-    font-size: 15px;
-    line-height: 20px;
-    font-family: var(--font-family-regular);
-    font-weight: 400;
-    color: var(--primary-grey);
+.VisibleOnMobile {
+  display: block;
 }
-.topDropdown select  option,
-.bottomDropdown select  option{
-    padding: 10px 14px;
-    font-size: 14px;
-    line-height: 24px;
-    font-family: var(--font-family-regular);
-    font-weight: 400;
-    color: var(--primary-black);
-    cursor: pointer;
+.VisibleAboveMobile {
+  display: none;
 }
 @media (min-width: 768px) {
-    .sportsBettingHomeInner{
-        padding: 16px;
-    }
-    .bottomInfoWrapper{
-        flex-direction: row;
-        gap: 16px;
-    }
-    .topDropdown select,
-    .bottomDropdown select{
-        width: 240px;
-        max-width: 100%;
-    }
+  .sportsBettingHomeInner {
+    padding: 16px;
+  }
+  .bottomInfoWrapper {
+    flex-direction: row;
+    gap: 16px;
+  }
+  .topDropdown select,
+  .bottomDropdown select {
+    width: 240px;
+    max-width: 100%;
+  }
+  .VisibleOnMobile {
+    display: none;
+  }
+  .VisibleAboveMobile {
+    display: block;
+  }
 }
 @media (min-width: 1349px) {
-    .sportsBettingHome{
-        margin: 24px 32px;
-        margin-top: 174px;
-    }
-    .sportsBettingHomeInner{
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 16px 24px;
-        align-items: center;
-    }
-    .topInfoWrapper{
-        max-width: 594px;
-    }
-    .bottomInfoWrapper{
-        gap: 48px;
-    }
-    .topInfoWrapper p{
-        padding-bottom: 4px;
-    }
+  .sportsBettingHome {
+    margin: 24px 32px;
+    margin-top: 174px;
+  }
+  .sportsBettingHomeInner {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 24px;
+    align-items: center;
+  }
+  .topInfoWrapper {
+    max-width: 594px;
+  }
+  .bottomInfoWrapper {
+    gap: 48px;
+  }
+  .topInfoWrapper p {
+    padding-bottom: 4px;
+  }
+}
+.dropdown {
+  position: relative;
+  width: 240px;
+}
+.dropdown-btn {
+  background-color: var(--primary-white);
+  border: var(--border);
+  padding: 7px 13px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: var(--font-family-regular);
+  color: var(--primary-grey);
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown-btn svg {
+  width: 10px;
+  height: 5px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 240px;
+  height: 295px;
+  overflow-y: scroll;
+  background-color: var(--primary-white);
+  box-shadow: var(--box-shadow);
+  border-radius: 8px;
+}
+
+/* Dropdown items */
+.dropdown-content div {
+  padding: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: var(--font-family-regular);
+  color: #333;
+}
+
+.dropdown-content div:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
 }
