@@ -1,12 +1,10 @@
 .headerSection {
   max-width: 1349px;
   margin: 0 auto;
-  position: fixed;
+  position: sticky;
   top: 0;
-  right: 0;
-  left: 0;
   background: var(--primary-white);
-  z-index: 4;
+  z-index: 1000;
 }
 .navBar {
   display: flex;
@@ -111,18 +109,25 @@
   height: 33.86px;
   background: var(--primary-grey);
 }
+@media (min-width: 470px) {
+  .subNavLinks {
+    justify-content: center;
+  }
+}
 @media (min-width: 768px) {
   .subNavLinks {
     justify-content: center;
   }
 }
-@media (min-width: 1349px) {
+@media (min-width: 1200px) {
   .hideOndesktop {
     display: none;
   }
   .hideOnTablet {
     display: flex;
   }
+}
+@media (min-width: 1349px) {
   .hamburgerMenu {
     gap: 4px;
     padding-right: 32px;

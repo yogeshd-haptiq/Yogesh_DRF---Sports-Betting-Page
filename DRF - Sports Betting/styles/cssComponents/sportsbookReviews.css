@@ -1,105 +1,105 @@
-.sportsbookReviewsSection{
-    margin-top: 20px;
+.sportsbookReviewsSection {
+  margin-top: 20px;
 }
-.sportsbookReviewsSection .SecondarySectionHeading{
-    text-align: center;
-    padding-bottom: 16px;
+.sportsbookReviewsSection .sectionHeading {
+  text-align: center;
+  padding-bottom: 16px;
 }
-.sportsbookReviewsWrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    margin-bottom: 16px;
-    padding: 0px 16px;
+.sportsbookReviewsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 16px;
+  padding: 0px 16px;
 }
-.sportsbookReviewsItem{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    box-shadow: var(--box-shadow);
-    border-radius: 8px;
-    border: var(--border);
-    padding: 15px;
+.sportsbookReviewsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  box-shadow: var(--box-shadow);
+  border-radius: 8px;
+  border: var(--border);
+  padding: 15px;
 }
-.topSportsbookReviewsItem{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.sportsbookReviewsInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.topSportsbookReviewsItem p{
-    font-size: 15px;
-    line-height: 20px;
-    font-family: var(--font-family-regular);
-    font-weight: 400;
+.sportsbookReviewsInfo p {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: var(--font-family-regular);
+  font-weight: 400;
 }
-.sportsbookReviewsItemHeading svg{
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
+.sportsbookReviewsItemHeading svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
-.bottomSportsbookReviewsItem{
-    display: flex;
-    flex-shrink: 1;
-    gap: 12px;
-    padding-top: 23px;
-    border-top: var(--border);
+.sportsbookReviewsRating {
+  display: flex;
+  flex-shrink: 1;
+  gap: 12px;
+  padding-top: 23px;
+  border-top: var(--border);
 }
-.bottomSportsbookReviewsItemImg svg{
-    width: 60px;
-    height: 60px;
-    flex-shrink: 0;
+.reviewRatingIcon svg {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
 }
-.bottomSportsbookReviewsItemInfo{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: 100%;
+.sportsbookReviewsItemInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
 }
-.bottomSportsbookReviewsItemInfo h3{
-    font-size: 17px;
-    line-height: 24px;
-    font-family: var(--font-family-bold);
-    font-weight: 700;
-    flex-shrink: 0;
+.sportsbookReviewsItemInfo h3 {
+  font-size: 17px;
+  line-height: 24px;
+  font-family: var(--font-family-bold);
+  font-weight: 700;
+  flex-shrink: 0;
 }
-.bottomSportsbookReviewsItemInfoRating{
-    display: flex;
-    gap: 8px;
+.sportsbookReviewsItemRating {
+  display: flex;
+  gap: 8px;
 }
-.bottomSportsbookReviewsItemInfoRating ul{
-    display: flex;
-    gap: 4px;
+.sportsbookReviewsItemRating ul {
+  display: flex;
+  gap: 4px;
 }
-.bottomSportsbookReviewsItemInfoRating ul svg{
-    display: block;
-    width: 16px;
-    height: 16px;
-    flex-shrink: 0;
+.sportsbookReviewsItemRating ul svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
-.bottomSportsbookReviewsItemInfoRating p{
-    font-size: 12px;
-    line-height: 16px;
-    font-family: var(--font-family-regular);
-    font-weight: 400;
-    color: var(--primary-grey);
+.sportsbookReviewsItemRating p {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: var(--font-family-regular);
+  font-weight: 400;
+  color: var(--primary-grey);
 }
 @media (min-width: 768px) {
-    .sportsbookReviewsWrapper{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .sportsbookReviewsItem{
-        width: calc(50% - 12px);
-    }
+  .sportsbookReviewsWrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .sportsbookReviewsItem {
+    width: calc(50% - 12px);
+  }
 }
 @media (min-width: 1349px) {
-    .sportsbookReviewsSection {
-        margin-top: 32px;
-    }
-    .sportsbookReviewsWrapper{
-        flex-wrap: nowrap;
-    }
-    .sportsbookReviewsWrapper{
-        padding: 0px 32px;
-    }
+  .sportsbookReviewsSection {
+    margin-top: 32px;
+  }
+  .sportsbookReviewsWrapper {
+    flex-wrap: nowrap;
+  }
+  .sportsbookReviewsWrapper {
+    padding: 0px 32px;
+  }
 }

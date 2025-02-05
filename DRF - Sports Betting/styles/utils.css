@@ -1,188 +1,184 @@
 @font-face {
-    font-family: 'titilliumWeb-Regular';
-    src: url('../fonts/titilliumWeb-Regular.woff2') format('woff2'),
-         url('../fonts/titilliumWeb-Regular.woff') format('woff');
-    font-display: swap;
+  font-family: "titilliumWeb-Regular";
+  src: url("../fonts/titilliumWeb-Regular.woff2") format("woff2"),
+    url("../fonts/titilliumWeb-Regular.woff") format("woff");
+  font-display: swap;
 }
 @font-face {
-    font-family: 'titilliumWeb-SemiBold';
-    src: url('../fonts/titilliumWeb-SemiBold.woff2') format('woff2'),
-         url('../fonts/titilliumWeb-SemiBold.woff') format('woff');
-    font-display: swap;
-
+  font-family: "titilliumWeb-SemiBold";
+  src: url("../fonts/titilliumWeb-SemiBold.woff2") format("woff2"),
+    url("../fonts/titilliumWeb-SemiBold.woff") format("woff");
+  font-display: swap;
 }
 @font-face {
-    font-family: 'titilliumWeb-Bold';
-    src: url('../fonts/titilliumweb-bold.woff2') format('woff2'),
-         url('../fonts/titilliumweb-bold.woff') format('woff');
-    font-display: swap;
+  font-family: "titilliumWeb-Bold";
+  src: url("../fonts/titilliumweb-bold.woff2") format("woff2"),
+    url("../fonts/titilliumweb-bold.woff") format("woff");
+  font-display: swap;
 }
 
-:root{
-    --primary-white: #FFFFFF;
-    --primary-black: #222222;
-    --secondary-black:#000000;
-    --primary-grey: #666666;
-    --secondary-grey: #787878;
-    --ternary-grey: #888888;
-    --bg-grey-4:#333333;
-    --primary-blue:#0066CC;
-    --primary-red:#EC1C24;
-    --primary-background:#F7FCFF;
-    --secondary-background:#19345E;
-    --box-shadow: 2px 2px 50px 0px rgba(133, 150, 195, 0.25);
-    --box-shadow-secondary: 0px 2px 2px 0px rgba(204, 204, 204, 1);
-    --border: 1px solid #DAE4E9;
-    --linear-gradient: linear-gradient(134.42deg, #004FA1 16.18%, #17315B 100%);
-    --font-family-regular: 'titilliumWeb-Regular';
-    --font-family-semibold: 'titilliumWeb-SemiBold';
-    --font-family-bold: 'titilliumWeb-Bold';
+:root {
+  --primary-white: #ffffff;
+  --primary-black: #222222;
+  --secondary-black: #000000;
+  --primary-grey: #666666;
+  --secondary-grey: #787878;
+  --ternary-grey: #888888;
+  --bg-grey-4: #333333;
+  --bg-dark-grey: #343a40;
+  --primary-blue: #0066cc;
+  --primary-red: #ec1c24;
+  --primary-background: #f7fcff;
+  --secondary-background: #19345e;
+  --box-shadow: 2px 2px 50px 0px rgba(133, 150, 195, 0.25);
+  --box-shadow-secondary: 0px 2px 2px 0px rgba(204, 204, 204, 1);
+  --border: 1px solid #dae4e9;
+  --linear-gradient: linear-gradient(134.42deg, #004fa1 16.18%, #17315b 100%);
+  --font-family-regular: "titilliumWeb-Regular";
+  --font-family-semibold: "titilliumWeb-SemiBold";
+  --font-family-bold: "titilliumWeb-Bold";
 }
 
-.container{
-    max-width: 100%;
-    margin: 0 auto;
+.container {
+  max-width: 100%;
+  margin: 0 auto;
 }
-.navigationHeading{
-    font-size: 28px;
-    line-height: 54px;
-    font-weight: 400;
-    font-family: var(--font-family-bold);
-    text-align: center;
-    color: var(--secondary-background);
+.navigationHeading {
+  font-size: 28px;
+  line-height: 54px;
+  font-family: var(--font-family-bold);
+  text-align: center;
+  color: var(--secondary-background);
 }
-.sectionHeading{
+.sectionHeading {
+  font-size: 19px;
+  line-height: 24px;
+  font-family: var(--font-family-bold);
+  color: var(--primary-black);
+}
+.BgSectionHeading {
+  font-size: 17px;
+  line-height: 24px;
+  font-family: var(--font-family-bold);
+  padding: 6px 0px 6px 16px;
+  color: var(--primary-white);
+  background: var(--linear-gradient);
+  text-transform: capitalize;
+}
+.subHeading {
+  font-size: 19px;
+  line-height: 24px;
+  font-family: var(--font-family-semibold);
+}
+.primaryButton {
+  padding: 9px 51px;
+  border-radius: 4px;
+  border: 1px solid var(--primary-blue);
+  background: var(--primary-white);
+  color: var(--primary-blue);
+  font-size: 15px;
+  line-height: 20px;
+  font-family: var(--font-family-bold);
+  cursor: pointer;
+}
+.secondaryButton {
+  padding: 9px 52px;
+  border-radius: 4px;
+  border: 1px solid var(--primary-blue);
+  background: var(--primary-blue);
+  color: var(--primary-white);
+  font-size: 15px;
+  line-height: 20px;
+  font-family: var(--font-family-bold);
+  cursor: pointer;
+}
+.sportNewaNameDate {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: var(--font-family-regular);
+  color: var(--primary-grey);
+}
+.sportNewaNameDate a {
+  font-family: var(--font-family-semibold);
+  font-size: 12px;
+  color: var(--primary-blue);
+}
+.sportNewaNameDate a:hover {
+  color: var(--bg-dark-grey);
+}
+.viewMoreCell {
+  display: flex;
+  justify-content: center;
+}
+.viewMore {
+  font-size: 13px;
+  line-height: 16px;
+  font-family: var(--font-family-semibold);
+  color: var(--primary-blue);
+  text-transform: capitalize;
+  text-align: center;
+  text-decoration: none;
+}
+.viewMore:hover {
+  color: var(--bg-dark-grey);
+}
+.readMore {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: var(--font-family-bold);
+  color: var(--primary-blue);
+}
+.sportsbookReviewsItemHeading {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.sportNewsItemInfoHeading {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: var(--font-family-bold);
+  color: var(--primary-black);
+}
+.boldText {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: var(--font-family-semibold);
+  color: var(--primary-black);
+}
+.wordBold {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: var(--font-family-bold);
+  color: var(--primary-black);
+}
+@media (min-width: 768px) {
+  .BgSectionHeading {
+    border-radius: 8px 8px 0px 0px;
+  }
+}
+@media (min-width: 1349px) {
+  .container {
+    max-width: 1349px;
+  }
+  .sportNewsItemInfoHeading {
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .viewMore {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .BgSectionHeading {
     font-size: 24px;
     line-height: 32px;
-    font-weight: 700;
-    font-family: var(--font-family-bold);
-}
-.SecondarySectionHeading{
-    font-size: 19px;
-    line-height: 24px;
-    font-family: var(--font-family-bold);
-    font-weight: 700;
-    color: var(--primary-black);
-}
-.BgSectionHeading{
-    font-size: 17px;
-    line-height: 24px;
-    font-family: var(--font-family-bold);
-    font-weight: 700;
-    padding: 6px 0px 6px 16px;
-    color: var(--primary-white);
-    background: var(--linear-gradient);
-    text-transform: capitalize;
-}
-.subHeading{
-    font-size: 19px;
-    line-height: 24px;
-    font-family: var(--font-family-semibold);
-    font-weight: 600;
-}
-.primaryButton{
-    padding: 9px 51px;
-    border-radius: 4px;
-    border: 1px solid var(--primary-blue);
-    background: var(--primary-white);
-    color: var(--primary-blue);
-    font-size: 15px;
-    line-height: 20px;
-    font-weight: 700;
-    font-family: var(--font-family-bold);
-}
-.secondaryButton{
-    padding: 9px 52px;
-    border-radius: 4px;
-    border: 1px solid var(--primary-blue);
-    background: var(--primary-blue);
-    color: var(--primary-white);
-    font-size: 15px;
-    line-height: 20px;
-    font-weight: 700;
-    font-family: var(--font-family-bold);
-}
-.sportNewaNameDate{
-    font-size: 12px;
-    line-height: 16px;
-    font-family: var(--font-family-regular);
-    font-weight: 400;
-    color: var(--primary-blue);
-}
-.sportNewaNameDate span{
-    font-size: 12px;
-    color: var(--primary-grey);
-}
-.viewMore{
-    font-size: 13px;
-    line-height: 16px;
-    font-family: var(--font-family-regular);
-    font-weight: 600;
-    color: var(--primary-blue);
-    text-transform: capitalize;
-    max-width: 100%;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-}
-.readMore{
-    font-size: 15px;
-    line-height: 20px;
-    font-family: var(--font-family-regular);
-    font-weight: 700;
-    color: var(--primary-blue);
-}
-.sportsbookReviewsItemHeading{
-    font-size: 15px;
-    line-height: 20px;
-    font-family: var(--font-family-regular);
-    font-weight: 700;
-    color: var(--primary-blue);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-.sportNewsItemInfoHeading{
-    font-size: 15px;
-    line-height: 20px;
-    font-family: var(--font-family-bold);
-    font-weight: 700;
-    color: var(--primary-black);
-}
-.boldText{
-    font-size: 15px;
-    line-height: 20px;
-    font-family: var(--font-family-semibold);
-    font-weight: 600;
-    color: var(--primary-black);
-}
-.wordBold{
-    font-size: 14px;
-    line-height: 20px;
-    font-family: var(--font-family-regular);
-    font-weight: 700;
-    color: var(--primary-black);
-}
-@media (min-width:768px){
-    .BgSectionHeading{
-        border-radius: 8px 8px 0px 0px;
-    }
-}
-@media (min-width:1349px){
-    .container{
-        max-width: 1349px;
-    }
-    .sportNewsItemInfoHeading{
-        font-size: 19px;
-        line-height: 24px;
-    }
-    .viewMore{
-        font-size: 15px;
-        line-height: 20px;
-    }
-    .BgSectionHeading{
-        font-size: 24px;
-        line-height: 32px;
-        padding: 10px 0px 10px 24px;
-    }
+    padding: 10px 0px 10px 24px;
+  }
+  .sectionHeading {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }

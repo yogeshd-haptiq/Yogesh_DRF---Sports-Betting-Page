@@ -1,97 +1,49 @@
 .sportsBettingHome {
-  background: var(--linear-gradient);
-  box-shadow: var(--box-shadow);
-  margin: 20px 16px;
-  margin-top: 160px;
-  border-radius: 8px;
-}
-.sportsBettingHomeInner {
-  padding: 16px 12px;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  padding: 16px 12px;
+  margin: 20px 16px;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  background: var(--linear-gradient);
 }
-.topInfoWrapper {
+.headerInfoWrapper {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.topInfoWrapper .sectionHeading {
+.headerInfoHeading {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: var(--font-family-bold);
   color: var(--primary-white);
 }
-.topInfoWrapper p {
+.headerInfoWrapper p {
   color: var(--primary-white);
   font-family: var(--font-family-semibold);
   font-size: 13px;
   font-weight: 600;
   line-height: 16px;
 }
-.bottomInfoWrapper {
+.dropdownWrapper {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.bottomInfoWrapper .subHeading {
+.dropdownWrapper .subHeading {
   color: var(--primary-white);
 }
-.topDropdown,
-.bottomDropdown {
+.sportbookDropdown,
+.stateDropdown {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-.VisibleOnMobile {
-  display: block;
-}
-.VisibleAboveMobile {
-  display: none;
-}
-@media (min-width: 768px) {
-  .sportsBettingHomeInner {
-    padding: 16px;
-  }
-  .bottomInfoWrapper {
-    flex-direction: row;
-    gap: 16px;
-  }
-  .topDropdown select,
-  .bottomDropdown select {
-    width: 240px;
-    max-width: 100%;
-  }
-  .VisibleOnMobile {
-    display: none;
-  }
-  .VisibleAboveMobile {
-    display: block;
-  }
-}
-@media (min-width: 1349px) {
-  .sportsBettingHome {
-    margin: 24px 32px;
-    margin-top: 174px;
-  }
-  .sportsBettingHomeInner {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 16px 24px;
-    align-items: center;
-  }
-  .topInfoWrapper {
-    max-width: 594px;
-  }
-  .bottomInfoWrapper {
-    gap: 48px;
-  }
-  .topInfoWrapper p {
-    padding-bottom: 4px;
-  }
-}
 .dropdown {
   position: relative;
-  width: 240px;
 }
-.dropdown-btn {
+.dropdownBtn {
   background-color: var(--primary-white);
   border: var(--border);
   padding: 7px 13px;
@@ -109,37 +61,78 @@
   justify-content: space-between;
   align-items: center;
 }
-.dropdown-btn svg {
+.dropdownBtn svg {
   width: 10px;
-  height: 5px;
+  height: 10px;
+  stroke: var(--ternary-grey);
 }
-.dropdown-content {
+.dropdown:hover svg {
+  transform: rotate(180deg);
+  stroke: var(--primary-blue);
+}
+.dropdownContent {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  width: 240px;
+  width: 100%;
   height: 295px;
   overflow-y: scroll;
   background-color: var(--primary-white);
   box-shadow: var(--box-shadow);
   border-radius: 8px;
+  z-index: 9;
 }
-
-/* Dropdown items */
-.dropdown-content div {
+.dropdownContent div {
   padding: 12px;
   cursor: pointer;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   font-family: var(--font-family-regular);
-  color: #333;
+  color: var(--primary-grey);
 }
-
-.dropdown-content div:hover {
-  background-color: #f1f1f1;
+.dropdownContent div:hover {
+  color: var(--bg-dark-grey);
 }
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdownContent {
   display: block;
+}
+@media (min-width: 768px) {
+  .sportsBettingHome {
+    padding: 16px;
+  }
+  .dropdownWrapper {
+    flex-direction: row;
+    gap: 16px;
+  }
+  .sportbookDropdown select,
+  .stateDropdown select {
+    width: 240px;
+    max-width: 100%;
+  }
+  .dropdown {
+    width: 240px;
+  }
+  .dropdownContent {
+    width: 240px;
+  }
+}
+@media (min-width: 1349px) {
+  .sportsBettingHome {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    margin: 24px 32px;
+  }
+  .headerInfoWrapper {
+    max-width: 594px;
+  }
+  .dropdownWrapper {
+    gap: 48px;
+  }
+  .headerInfoWrapper p {
+    padding-bottom: 4px;
+  }
 }

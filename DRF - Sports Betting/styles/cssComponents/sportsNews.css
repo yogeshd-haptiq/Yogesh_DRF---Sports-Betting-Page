@@ -1,20 +1,16 @@
-/* .sportsNewsSection{
-    padding-bottom: 12px;
-} */
 .sportsNewsWrapper {
   margin: 12px 16px;
 }
 .sportNewsImage {
-  width: 343px;
-  height: 274px;
+  width: 100%;
+  height: auto;
   max-width: 100%;
-  max-height: 100%;
   border-radius: 4px;
 }
 .sportNewsImage img {
   border-radius: 4px;
 }
-.topSportNews {
+.singleSportNews {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -26,13 +22,16 @@
   flex-direction: column;
   gap: 4px;
 }
-.topSportNews h3 {
+.singleSportNews h3 > a {
   font-size: 19px;
   line-height: 24px;
   font-family: var(--font-family-bold);
-  font-weight: 700;
+  color: var(--primary-black);
 }
-.topSportNews p {
+.singleSportNews h3 > a:hover {
+  color: var(--primary-blue);
+}
+.singleSportNews p {
   font-size: 15px;
   line-height: 20px;
   font-family: var(--font-family-regular);
@@ -62,11 +61,11 @@
   justify-content: space-between;
   gap: 6px;
 }
+.sportNewsItemInfo > a:hover {
+  color: var(--primary-blue);
+}
 .sportsNewsWrapper .viewMore {
   padding: 12px 0px;
-}
-.VisibleOnDesktop {
-  display: none;
 }
 @media (min-width: 768px) {
   .sportsNewsSection {
@@ -88,21 +87,21 @@
     display: flex;
     gap: 12px;
   }
-  .topSportNews,
-  .bottomSportNews {
+  .singleSportNews,
+  .multipleSportNews {
     width: calc(50% - 6px);
   }
-  .topSportNews {
+  .singleSportNews {
     border-bottom: none;
   }
-  .topSportNews p {
+  .singleSportNews p {
     padding-bottom: 0px;
   }
   .sportsNewsWrapper .viewMore {
     padding: 0px;
     padding-bottom: 12px;
   }
-  .sportNewsItemImg {
+  .sportNewsItem .sportNewsItemImg {
     width: 85px;
     height: 64px;
     border-radius: 4px;
@@ -123,16 +122,22 @@
   .VisibleOnTablet {
     display: block;
   }
-  .VisibleOnDesktop {
-    display: none;
-  }
 }
 
+@media (min-width: 1200px) {
+  .sportNewsItem .sportNewsItemImg {
+    width: 127.83px;
+    max-width: 100%;
+    height: 72px;
+    max-height: 100%;
+    border-radius: 4px;
+  }
+}
 @media (min-width: 1348px) {
   .sportsNewsSection {
     margin: 32px;
   }
-  .bottomSportNews {
+  .multipleSportNews {
     flex-direction: column-reverse;
   }
   .sportNewsImage {
@@ -157,21 +162,14 @@
   .sportNewsItem {
     padding: 8px 0px;
   }
-  .sportNewsItem .sportNewsItemImg {
-    width: 127.83px;
-    max-width: 100%;
-    height: 72px;
-    max-height: 100%;
-    border-radius: 4px;
-  }
-  .bottomSportNews .sportNewsItem:first-child {
+  .multipleSportNews .sportNewsItem:first-child {
     padding: 0px 0px 8px 0px;
   }
-  .bottomSportNews .sportNewsItem:last-child {
+  .multipleSportNews .sportNewsItem:last-child {
     border-bottom: none;
     padding-bottom: 0px;
   }
-  .topSportNews {
+  .singleSportNews {
     max-width: 604px;
     width: 100%;
     align-items: flex-start;
@@ -181,8 +179,5 @@
   }
   .sportsNewsWrapper .viewMore {
     padding: 16px 0px 16px 0px;
-  }
-  .VisibleOnDesktop {
-    display: block;
   }
 }
